@@ -1,1 +1,1 @@
-# Odoo_module_Doc_mananger
+# Odoo_module_Doc_manager
