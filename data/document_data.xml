@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="company_demo" model="res.company">
+        <field name="name">Your Company</field>
+    </record>
+
+    <record id="document_demo" model="document.management">
+        <field name="name">Sample Document</field>
+        <field name="description">This is a sample document.</field>
+        <field name="company_id" ref="company_demo"/>
+    </record>
+</odoo>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_document_management_tree" model="ir.actions.act_window">
+        <field name="name">Documents</field>
+        <field name="res_model">document.management</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_document_management" name="Documents" parent="base.menu_document" sequence="10"/>
+    <menuitem id="menu_document_management_tree" name="Document Tree" parent="menu_document_management" action="action_document_management_tree"/>
+
+</odoo>
