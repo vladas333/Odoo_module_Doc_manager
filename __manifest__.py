@@ -7,8 +7,10 @@
     'description': 'A module to manage documents or books with: name, description and company information.',
     'depends': ['base'],
     'data': [
-        'views/document_view.xml',
-        'data/document_data.xml',
+        'views/document_views.xml',
+        'views/document_action.xml',
+        'views/document_wizard.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': True,
