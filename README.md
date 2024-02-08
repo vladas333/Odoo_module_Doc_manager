@@ -1,7 +1,7 @@
-# Odoo_module_Doc_mananger
+# Odoo_module_Doc_manager
 
-Creating a new Odoo 13 module for storing information about various documents. Name, description and company would be stored (Many2one relation with res.company model)...
+Odoo 13 Document manager module
 
-Trying to find ERROR SOLUTION
-Error is:
-odoo.tools.convert.ParseError: "External ID not found in the system: custom_documents.doc_manager_wizard" while parsing file:.../doc_manager/views/document_wizard.xml:
+ABOUT MODULE
+This module is designed to store information about various documents or books. The name of the document, its description and the company/author are stored.
+With it, the view and shape of the data tree can be accessed through the menu. Also has the option of printing the list, according to date criteria.
