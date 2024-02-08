@@ -1,0 +1,35 @@
+<odoo>
+    <data>
+        <record id="doc_manager_wizard" model="ir.ui.view">
+            <field name="name">document.wizard.form</field>
+            <field name="model">doc.manager.wizard</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="date_from"/>
+                        <field name="date_to"/>
+                    </group>
+                    <footer>
+                        <button string="Print Documents" type="object" class="oe_highlight" />
+                        <button string="Cancel" class="oe_link" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_document_wizard" model="ir.actions.act_window">
+            <field name="name">Print Documents</field>
+            <field name="res_model">doc.manager.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="custom_documents.doc_manager_wizard"/>
+            <field name="view_type">form</field>
+            <field name="view_id" ref="custom_documents.doc_manager_wizard"/>
+            <field name="target">new</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    Click to print documents within a date range.
+                </p>
+            </field>
+        </record>
+    </data>
+</odoo>
